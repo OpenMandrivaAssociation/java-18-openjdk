@@ -1,7 +1,7 @@
 # Use gcc instead of clang
 # As of 17.0.1/clang 13, we get compile time crashes
 %bcond_without gcc
-%bcond_without system_jdk
+%bcond_with system_jdk
 # Without bootstrap, the package BuildRequires
 # rpm-javamacros (which in turn requires this package)
 # so jmod(*) and java(*) Provides: can be generated correctly.
