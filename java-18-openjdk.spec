@@ -380,7 +380,6 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_jvmdir}/jre-%{major}-openjdk
 %{_jvmdir}/java-%{major}-openjdk/bin/jwebserver
 %if %{with system_jdk}
-%{_mandir}/man1/jwebserver.1*
 %{_mandir}/man1/java.1*
 %{_mandir}/man1/jpackage.1*
 %{_mandir}/man1/keytool.1*
@@ -391,6 +390,7 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_mandir}/man1/jlink.1*
 %{_mandir}/man1/jmod.1*
 %{_mandir}/man1/jshell.1*
+%{_mandir}/man1/jwebserver.1*
 %{_sysconfdir}/profile.d/*
 %{_sysconfdir}/ld.so.conf.d/java.conf
 %else
@@ -406,6 +406,7 @@ chmod +x %{buildroot}%{_sysconfdir}/profile.d/*.*sh
 %{_jvmdir}/java-%{major}-openjdk/man/man1/jlink.1*
 %{_jvmdir}/java-%{major}-openjdk/man/man1/jmod.1*
 %{_jvmdir}/java-%{major}-openjdk/man/man1/jshell.1*
+%{_jvmdir}/java-%{major}-openjdk/man/man1/jwebserver.1*
 %endif
 
 %files gui
