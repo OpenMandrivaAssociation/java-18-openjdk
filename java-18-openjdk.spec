@@ -21,7 +21,7 @@
 
 %define major %(echo %{version} |cut -d. -f1)
 %define ver %(echo %{version} |rev |cut -d. -f2- |rev)
-%define minor 2
+%define minor 1
 #define is_head 1
 #For non-GA releases: %(echo %{version} |rev |cut -d. -f1 |rev)
 # OpenJDK X requires OpenJDK >= X-1 to build -- so we need
@@ -35,7 +35,7 @@
 %endif
 
 Name:		java-18-openjdk
-Version:	18.0.1.1.%{minor}
+Version:	18.0.2.1.%{minor}
 Release:	1
 Summary:	Java Runtime Environment (JRE) %{major}
 Group:		Development/Languages
