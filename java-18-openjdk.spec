@@ -40,7 +40,7 @@ Release:	4
 Summary:	Java Runtime Environment (JRE) %{major}
 Group:		Development/Languages
 License:	GPLv2, ASL 1.1, ASL 2.0, LGPLv2.1
-URL:		http://openjdk.java.net/
+URL:		https://openjdk.java.net/
 Source0:	https://github.com/openjdk/jdk%{!?is_head:%{major}u}/archive/refs/tags/jdk-%{?is_head:%{major}}%{!?is_head:%{ver}}+%{minor}.tar.gz
 # Extra tests
 Source50:	TestCryptoLevel.java
